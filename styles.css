@@ -1,0 +1,423 @@
+/*Background: #F2F1E8
+Text: #131511
+Inline Link: #968772
+Inline Link (Hover): #967343
+Navigation Background: #FFFFFF
+Navigation Text: #2B2F26
+Navigation Text (Hover): #CD5D67
+Navigation Text (Active) #968772
+Button Background: #968772
+Button Background (Hover): #967343
+Button Text: #F2F1E8
+Button Text (Hover): #FFFFFF
+Input Border Bottom: #968772
+Input Border Bottom (Focus): #967343*/
+
+
+/********** HOME PAGE styling **********/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  /*margin: 0 auto;*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  color: #131511;
+}
+
+.container {
+  width: 1280px;
+}
+
+header {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  box-shadow: 3px 3px 2px #888888;
+  font-family: Roboto;
+  font-weight: normal;
+  position: fixed;
+  top: 0;
+  width: 1280px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li a{
+  color: #2B2F26;
+  margin: 40px;
+  transition: color 1s;
+  text-transform: uppercase;
+}
+
+nav li a:hover {
+  color: #CD5D67;
+}
+
+nav li a:active {
+  color: #968772;
+}
+
+.active {
+  color: #968772;
+}
+
+.logo {
+  background-image: url(images/bent-creek-logo.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+/*--Main Section--*/
+
+main {
+  background-color: #F2F1E8;
+  background-size: cover;
+  font-family: 'Merriweather';
+  color: #131511;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  padding: 30px;
+  font-family: Merriweather;
+}
+
+.title h1 {
+  font-size: 75px;
+  font-weight: normal;
+}
+
+.title h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-row {
+height: 350px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+margin: 10px;
+}
+
+.bottom-row {
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 10px;
+}
+
+.image {
+  margin: 5px;
+  display: flex;
+  align-items: flex-end;
+}
+
+#product-1 {
+  flex-basis: 50%;
+  background-image: url(./images/product-1.jpg);
+  background-size: cover;
+}
+
+#product-2 {
+  flex-basis: 25%;
+  background-image: url(./images/product-2.jpg);
+  background-size: cover;
+}
+
+#product-3 {
+  flex-basis: 25%;
+  background-image: url(./images/product-3.jpg);
+  background-size: cover;
+}
+
+#product-4 {
+  flex-basis: 20%;
+  background-image: url(./images/product-4.jpg);
+  background-size: cover;
+}
+
+#product-5 {
+  flex-basis: 20%;
+  background-image: url(./images/product-5.jpg);
+  background-size: cover;
+}
+
+#product-6 {
+  flex-basis: 40%;
+  background-image: url(./images/product-6.jpg);
+  background-size: cover;
+}
+
+#product-7 {
+  flex-basis: 20%;
+  background-image: url(./images/product-7.jpg);
+  background-size: cover;
+}
+
+.image-text {
+  color: #F2F1E8;
+  background-color: rgb(42,48,37);
+  padding: 15px;
+}
+
+/********** About page styling **********/
+
+.heading{
+  font-size: 65px;
+  text-align: center;
+  padding: 30px;
+  font-family: Merriweather;
+  font-weight: 500;
+}
+
+.about{
+  padding: 0 155px;
+  font-family: Merriweather;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about p{
+  font-size: 20px;
+  line-height: 200%;
+}
+
+p a {
+  color: #968772;
+  transition: color 1s;
+}
+
+p a:hover {
+  color: #967343
+}
+
+#birdhouse{
+  background-image: url(images/birdhouse.jpg);
+  height: 100px;
+  width: 125px;
+  background-size: cover;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+blockquote{
+  padding: 20px 40px;
+  border-left: 2px solid gray;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 20px 0;
+}
+
+.about h3 {
+  font-weight: 500;
+}
+
+.banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1280px;
+  margin: 50px 0 20px 0;
+  align-self: center;
+}
+
+.background-image {
+  background-image: url(images/background-3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+  width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h2 {
+  color: white;
+  font-size: 75px;
+  font-family: Merriweather;
+  font-weight: 100;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 200px;
+  justify-content: center;
+  align-content: center;
+  padding-left: 15px;
+}
+
+#background-1 {
+  background-image: url(images/background-1.jpg);
+  background-size: cover;
+  height: 125px;
+}
+.icon p{
+  font-size: 14px;
+  align-self: center;
+  font-weight: 100;
+}
+
+.about h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+table, td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+thead {
+  text-align: center;
+}
+
+td {
+  padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(243,235,218);
+}
+
+/**********Newsletter page styling**********/
+
+.newsletter {
+  background-image: url(images/background-2.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: white;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+legend {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+legend h4 {
+  font-size: 22px;
+  margin: 30px 0 20px 0;
+  font-family: Merriweather;
+  font-weight: 500;
+}
+
+legend h5 {
+  font-size: 16px;
+  margin: 10px;
+  font-family: Merriweather;
+}
+
+#nameInput, #emailInput {
+  width: 90%;
+  border-bottom: 2px solid #968772;
+  margin: 20px;
+  padding: 0 0 5px 0;
+  color: gray;
+  transition: border-bottom 1s;
+}
+
+#emailInput:focus{
+  border-bottom: 2px solid #967343;
+}
+
+#nameInput:focus {
+  border-bottom: 2px solid #967343;
+}
+
+.button {
+  padding: 15px;
+  background-color: #968772;
+  text-align: center;
+  width: 125px;
+  margin: 10px auto 30px auto;
+  color: white;
+  transition: background-color 1s;
+}
+
+.button:hover {
+  background-color: #967343;
+}
+
+#signupButton {
+  color: #F2F1E8;
+}
+
+#signupButton:hover {
+  color: #FFFFFF;
+}
+
+/**********Footer styling: For Home and About Pages ONLY**********/
+
+footer {
+  background-color: rgb(42,48,37);
+  color: white;
+  padding: 30px;
+  font-family: Merriweather;
+  font-weight: 500;
+}
